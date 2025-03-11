@@ -45,6 +45,9 @@ flatpickr(dateInput, options);
 
 startBtn.addEventListener('click', event => {
   event.preventDefault();
+  if (!userSelectedDate) {
+    return;
+  } 
 
   startBtn.classList.remove('active-b');
   dateInput.classList.add('disable-i');
