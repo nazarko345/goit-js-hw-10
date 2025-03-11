@@ -6,7 +6,6 @@ import 'izitoast/dist/css/iziToast.min.css';
 
 const startBtn = document.querySelector('[data-start]');
 const dateInput = document.querySelector('#datetime-picker');
-const value = document.querySelectorAll('.value');
 
 const dataDays = document.querySelector('[data-days]');
 const dataHours = document.querySelector('[data-hours]');

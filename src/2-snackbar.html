@@ -10,12 +10,29 @@
   <body>
     <main>
       <div class="container">
-        <h1 class="main-title">
-          <span class="main-title-gradient">Welcome</span> to page 3
-        </h1>
+        <form class="form">
+          <label class="label-d">
+            Delay (ms)
+            <input class="delay-input" type="number" name="delay" required />
+          </label>
+
+          <fieldset class="fieldset">
+            <legend class="legend">State</legend>
+            <label>
+              <input class="fulfilled" type="radio" name="state" value="fulfilled" required />
+              Fulfilled
+            </label>
+            <label>
+              <input class="rejected" type="radio" name="state" value="rejected" required />
+              Rejected
+            </label>
+          </fieldset>
+
+          <button type="submit" class="submit-btn">Create notification</button>
+        </form>
       </div>
       <a class="back-link" href="./index.html">Go back</a>
     </main>
-    <script src="./js/2-snackbar.js"></script>
+    <script type="module" src="./js/2-snackbar.js"></script>
   </body>
 </html>
