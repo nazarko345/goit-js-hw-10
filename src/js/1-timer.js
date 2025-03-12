@@ -59,7 +59,6 @@ startBtn.addEventListener('click', event => {
 
     if (remainingTime <= 0) {
       clearInterval(intervalId);
-      startBtn.classList.add('active-b');
       dateInput.classList.remove('disable-i');
       dateInput.disabled = false;
       return;
